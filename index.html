@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CS 1.6 Hacks</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        /* --- Общий стиль --- */
+        /* --- General Styles --- */
         * {
             margin: 0;
             padding: 0;
@@ -35,7 +35,7 @@
             transition: 0.3s;
         }
 
-        /* --- Шапка --- */
+        /* --- Header --- */
         .header {
             display: flex;
             align-items: center;
@@ -121,7 +121,7 @@
             margin-right: 6px;
         }
 
-        /* --- ТАБЫ (вкладки) --- */
+        /* --- Tabs --- */
         .tabs {
             display: flex;
             gap: 8px;
@@ -163,7 +163,7 @@
             box-shadow: 0 0 20px rgba(255, 136, 0, 0.15);
         }
 
-        /* --- Контент табов --- */
+        /* --- Tab Content --- */
         .tab-content {
             display: none;
             animation: fadeIn 0.35s ease;
@@ -178,7 +178,7 @@
             to { opacity: 1; transform: translateY(0); }
         }
 
-        /* --- Блок Alternative hack (внутри таба) --- */
+        /* --- Alternative Hack Block --- */
         .alt-hack {
             background: #181818;
             border-radius: 36px;
@@ -246,7 +246,7 @@
             background-clip: text;
         }
 
-        /* --- Функции (ESP, AIM, MISC) --- */
+        /* --- Features --- */
         .features {
             display: flex;
             justify-content: center;
@@ -295,7 +295,7 @@
             color: #4caf50;
         }
 
-        /* --- Второй таб: Информация --- */
+        /* --- Info Grid --- */
         .info-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -334,7 +334,7 @@
             font-size: 14px;
         }
 
-        /* --- Кнопки (Скачать + Тутор) --- */
+        /* --- Buttons --- */
         .actions {
             display: flex;
             justify-content: center;
@@ -402,7 +402,7 @@
             box-shadow: 0 4px 0 #0f0f0f;
         }
 
-        /* --- Подвал --- */
+        /* --- Footer --- */
         .footer-note {
             margin-top: 30px;
             font-size: 14px;
@@ -416,7 +416,7 @@
             color: #ff8800;
         }
 
-        /* --- Адаптив --- */
+        /* --- Responsive --- */
         @media (max-width: 700px) {
             .hack-card { padding: 25px 18px; }
             .main-title { font-size: 30px; }
@@ -439,7 +439,7 @@
 <body>
     <div class="hack-card">
 
-        <!-- ШАПКА -->
+        <!-- HEADER -->
         <div class="header">
             <div class="header-left">
                 <div class="icon-wrapper">
@@ -456,20 +456,20 @@
             </div>
         </div>
 
-        <!-- ТАБЫ -->
+        <!-- TABS -->
         <div class="tabs">
             <button class="tab-btn active" data-tab="tab1">
-                <i class="fas fa-bolt"></i> Основное
+                <i class="fas fa-bolt"></i> Main
             </button>
             <button class="tab-btn" data-tab="tab2">
-                <i class="fas fa-info-circle"></i> Инфо
+                <i class="fas fa-info-circle"></i> Info
             </button>
             <button class="tab-btn" data-tab="tab3">
-                <i class="fas fa-history"></i> Обновления
+                <i class="fas fa-history"></i> Updates
             </button>
         </div>
 
-        <!-- ===== ТАБ 1: ОСНОВНОЕ ===== -->
+        <!-- ===== TAB 1: MAIN ===== -->
         <div id="tab1" class="tab-content active">
             <div class="alt-hack">
                 <div class="alt-header">
@@ -496,10 +496,10 @@
                 </div>
 
                 <div class="feature-desc">
-                    <i class="fas fa-check-circle"></i> Wallhack · Aimbot · Triggerbot · Radar · NoFlash · Anti-Smoke
+                    <i class="fas fa-check-circle"></i> Wallhack В· Aimbot В· Triggerbot В· Radar В· NoFlash В· Anti-Smoke
                 </div>
 
-                <!-- Дополнительные фишки -->
+                <!-- Extra features -->
                 <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 18px;">
                     <span style="background:#111; padding:6px 18px; border-radius:30px; color:#888; font-size:14px; border:1px solid #2a2a2a;">
                         <i class="fas fa-shield-alt" style="color:#ff8800;"></i> Anti-Cheat Bypass
@@ -513,92 +513,92 @@
                 </div>
             </div>
 
-            <!-- КНОПКИ (Скачать + Тутор) с РАБОЧИМИ ССЫЛКАМИ -->
+            <!-- BUTTONS -->
             <div class="actions">
                 <a href="https://drive.google.com/file/d/1a_O6SlCliEnC_-CUrJFugfSxHs7wqubu/view?usp=drivesdk" target="_blank" class="btn btn-download" id="downloadLink">
-                    <i class="fas fa-download"></i> Скачать
+                    <i class="fas fa-download"></i> Download
                 </a>
                 <a href="https://youtu.be/Lw4xaKs6E-Y?si=FbD7-PD5a22FWPj7" target="_blank" class="btn btn-tutorial" id="tutorialLink">
-                    <i class="fas fa-graduation-cap"></i> Тутор
+                    <i class="fas fa-graduation-cap"></i> Tutorial
                 </a>
             </div>
             <p style="color:#555; text-align:center; margin-top:12px; font-size:14px;">
                 <i class="fas fa-external-link-alt" style="color:#ff8800;"></i> 
-                Ссылки откроются в новой вкладке
+                Links will open in a new tab
             </p>
         </div>
 
-        <!-- ===== ТАБ 2: ИНФО ===== -->
+        <!-- ===== TAB 2: INFO ===== -->
         <div id="tab2" class="tab-content">
             <h3 style="color:#ddd; margin-bottom: 18px; font-size: 26px;">
-                <i class="fas fa-crown" style="color:#ff8800;"></i> О чите
+                <i class="fas fa-crown" style="color:#ff8800;"></i> About the Cheat
             </h3>
             <div class="info-grid">
                 <div class="info-card">
                     <i class="fas fa-shield-virus"></i>
-                    <h4>Безопасность</h4>
-                    <p>Полностью обфусцированный код. VAC защита обходится.</p>
+                    <h4>Security</h4>
+                    <p>Fully obfuscated code. Bypasses VAC protection.</p>
                 </div>
                 <div class="info-card">
                     <i class="fas fa-tachometer-alt"></i>
-                    <h4>Производительность</h4>
-                    <p>Оптимизирован для слабых ПК. +20-30 FPS.</p>
+                    <h4>Performance</h4>
+                    <p>Optimized for low-end PCs. +20-30 FPS boost.</p>
                 </div>
                 <div class="info-card">
                     <i class="fas fa-sliders-h"></i>
-                    <h4>Настройка</h4>
-                    <p>Гибкий конфиг через .ini файл. Всё под себя.</p>
+                    <h4>Configuration</h4>
+                    <p>Flexible config via .ini file. Customize everything.</p>
                 </div>
                 <div class="info-card">
                     <i class="fas fa-user-secret"></i>
-                    <h4>Приватность</h4>
-                    <p>Не передаёт данные. Только локальный запуск.</p>
+                    <h4>Privacy</h4>
+                    <p>No data collection. Runs locally only.</p>
                 </div>
             </div>
             <p style="color:#666; margin-top: 10px; text-align:center; font-size:15px;">
-                <i class="fas fa-check-circle" style="color:#4caf50;"></i> Поддерживает все версии CS 1.6 (Steam / Non-Steam)
+                <i class="fas fa-check-circle" style="color:#4caf50;"></i> Supports all CS 1.6 versions (Steam / Non-Steam)
             </p>
         </div>
 
-        <!-- ===== ТАБ 3: ОБНОВЛЕНИЯ ===== -->
+        <!-- ===== TAB 3: UPDATES ===== -->
         <div id="tab3" class="tab-content">
             <h3 style="color:#ddd; margin-bottom: 18px; font-size: 26px;">
-                <i class="fas fa-history" style="color:#ff8800;"></i> История версий
+                <i class="fas fa-history" style="color:#ff8800;"></i> Version History
             </h3>
             <div style="background:#181818; border-radius:28px; padding:20px 25px; border:1px solid #2e2e2e;">
                 <div style="display:flex; gap:20px; flex-direction:column;">
                     <div style="display:flex; align-items:center; gap:15px; border-bottom:1px solid #222; padding-bottom:12px;">
                         <span style="background:#ff8800; color:#111; font-weight:800; padding:4px 14px; border-radius:30px; font-size:14px;">v3.0</span>
-                        <span style="color:#aaa;">Добавлен Aimbot FOV, улучшен ESP</span>
-                        <span style="color:#555; margin-left:auto;">02.07.2026</span>
+                        <span style="color:#aaa;">Added Aimbot FOV, improved ESP</span>
+                        <span style="color:#555; margin-left:auto;">07.02.2026</span>
                     </div>
                     <div style="display:flex; align-items:center; gap:15px; border-bottom:1px solid #222; padding-bottom:12px;">
                         <span style="background:#333; color:#fff; font-weight:800; padding:4px 14px; border-radius:30px; font-size:14px;">v2.5</span>
-                        <span style="color:#aaa;">Новый MISC: Bhop + FastReload</span>
+                        <span style="color:#aaa;">New MISC: Bhop + FastReload</span>
                         <span style="color:#555; margin-left:auto;">18.06.2026</span>
                     </div>
                     <div style="display:flex; align-items:center; gap:15px;">
                         <span style="background:#333; color:#fff; font-weight:800; padding:4px 14px; border-radius:30px; font-size:14px;">v2.0</span>
-                        <span style="color:#aaa;">Первая публичная версия</span>
+                        <span style="color:#aaa;">First public release</span>
                         <span style="color:#555; margin-left:auto;">01.06.2026</span>
                     </div>
                 </div>
             </div>
             <p style="color:#555; margin-top:15px; text-align:center; font-size:14px;">
-                <i class="fas fa-arrow-up" style="color:#ff8800;"></i> Регулярные обновления каждые 2 недели
+                <i class="fas fa-arrow-up" style="color:#ff8800;"></i> Regular updates every 2 weeks
             </p>
         </div>
 
-        <!-- ПОДВАЛ -->
+        <!-- FOOTER -->
         <div class="footer-note">
-            <i class="fas fa-code"></i> Для образовательных целей · 
+            <i class="fas fa-code"></i> For educational purposes only В· 
             <i class="fas fa-lock" style="color:#4caf50;"></i> 
-            <span style="color:#3a3a3a;">Все ссылки рабочие</span>
+            <span style="color:#3a3a3a;">All links are working</span>
         </div>
     </div>
 
     <script>
-        // === ПЕРЕКЛЮЧЕНИЕ ТАБОВ ===
+        // === TAB SWITCHING ===
         const tabs = document.querySelectorAll('.tab-btn');
         const contents = document.querySelectorAll('.tab-content');
 
@@ -614,11 +614,11 @@
             });
         });
 
-        // === ПОДТВЕРЖДЕНИЕ РАБОТЫ ССЫЛОК ===
-        console.log('✅ Сайт полностью готов!');
-        console.log('📥 Ссылка на скачивание: ' + document.getElementById('downloadLink').href);
-        console.log('📺 Ссылка на туториал: ' + document.getElementById('tutorialLink').href);
-        console.log('🎮 CS 1.6 Hacks v3');
+        // === CONFIRMATION ===
+        console.log('вњ… Website is fully ready!');
+        console.log('рџ“Ґ Download link: ' + document.getElementById('downloadLink').href);
+        console.log('рџ“є Tutorial link: ' + document.getElementById('tutorialLink').href);
+        console.log('рџЋ® CS 1.6 Hacks v3');
     </script>
 
 </body>
